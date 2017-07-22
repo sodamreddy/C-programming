@@ -18,11 +18,12 @@ char *rvowel(char *string);
         char *string;
         string=(char*)malloc(sizeof(char));
         //read inputs
+        printf("Enter the String::");
         scanf("%s",string);
-      //  int i=0;
         string=rvowel(string);
+        //output
         printf("%s",string);
-
+        return 0;
     }
 char *rvowel(char *string){
     long len=strlen(string);
@@ -35,8 +36,8 @@ char *rvowel(char *string){
             len--;
         }
     }
-    //output
-    return string;
+
+    return string; //returns string without vowels
 }
 
 
